@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require('mongoose'); // v2 -> sql 
 
 const transactionSchema = new mongoose.Schema({
   text: {
@@ -19,3 +19,15 @@ const transactionSchema = new mongoose.Schema({
 const Transaction = mongoose.model('Transaction', transactionSchema);
 
 module.exports = Transaction;
+
+
+// users 
+// id, name, e
+
+
+// wallet
+// id, userId, wallet_balance
+
+
+// transactions - read about concurrency issues
+// id, walletId, userId, transactionType (credit, debit) , amount
