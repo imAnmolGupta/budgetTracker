@@ -1,6 +1,5 @@
 const express = require('express');
 const {createTransaction,getTransactions,deleteTransactions} = require('../controllers/transactionController');
-//const getTransactions = require('../controllers/transactionController');
 
 const router = express.Router();
 const transactionController = require('../controllers/transactionController');
